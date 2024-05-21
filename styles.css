@@ -1,0 +1,52 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%; /* Garante que o nav ocupe toda a largura */   
+    position: fixed; /* Fixa nav no topo */
+    top: 0; /* Alinha a nav no topo da página */
+    left: 0; /* Alinha o nav na esquerda da página */
+    z-index: 100; /* Garante que o nav fique acima de outros elementos */
+    background-color: #22181c;
+    color: #fbfbfb;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 180px;
+}
+
+.list-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+}
+
+.list-header button {
+    background-color: #f45b69;
+    color: #fbfbfb;
+    padding: 5px 5px 5px 5px;
+}
+
+.list-header li {
+    margin-right: 120px;
+    font-weight: 500;
+    
+}
+
+.list-header li:last-child {
+    margin-right: 190px;
+}
