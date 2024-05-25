@@ -171,6 +171,10 @@ nav {
         margin-right: 25px;
         margin-bottom: 0;
     }
+
+    span {
+        padding-top: 10px;
+    }
 }
 
 /*  */
@@ -356,6 +360,19 @@ nav {
     .list-header li:last-child {
         margin-right: 65px;
         margin-bottom: 0;
+    }
+
+    .bg-frase {
+        height: auto;
+    }
+
+    #frase, .row-frase {
+        font-size: 120px;
+        line-height: 100px;
+    }
+
+    span {
+        padding-top: 40px;
     }
 }
  
