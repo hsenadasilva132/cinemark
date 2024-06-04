@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+span {
+    color: #f45b69;
+}
+
 @font-face {
     font-family: "Cinemarkting";
     src: url("/assets/common/fonts/bradesco/BradescoSans-Italic.woff2") format("woff2"), url("/assets/common/fonts/bradesco/BradescoSans-Italic.woff") format("woff"), url("/assets/common/fonts/bradesco/BradescoSans-Italic.ttf") format("truetype"), url("/assets/common/fonts/bradesco/BradescoSans-Italic.eot?") format("eot");
@@ -603,6 +607,7 @@ a {
 
 }
 
+
 .images-estreias {
     height: 25em; 
     width: 100%;
@@ -616,6 +621,19 @@ a {
 
 .images-estreias img {
     border: 2px solid #F0EFF4;
+    transition: opacity 0.5s;
+}
+
+.h3-estreias {
+    height: auto; 
+    width: 100%;
+    color: #F0EFF4;
+    padding: 7.0em 0 2.5em 0;
+}
+
+.h3-estreias h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
 }
 
 #beetle-juice-2 {
@@ -634,9 +652,201 @@ a {
 .titulos-estreias {
     display: flex;
     justify-content: space-around;
-    padding: 0 2.2em 0 0em;
+    padding: 3.0em 1.0em 3.0em 0;
 }
 
 .titulos-estreias span {
     color: #f45b69;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    font-weight: bolder;
 }
+
+/* Section de Assinatura */
+#planos {
+    height: 100%;
+    width: 100%;
+    background-color: #22181c;
+    color: #F0EFF4;
+    margin: 0;
+    padding: 40% 0 10% 0;
+}
+
+
+.container-planos {
+    text-align: center;
+}
+
+.container-planos h4 {
+    font-family: Max Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 2.1875em;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.container-planos button {
+    width: 15.5em;
+    line-height: 1;
+    letter-spacing: .1em;
+    font-size: 1rem;
+    background-color: #22181c;
+    color: #f45b69;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 2px solid #f45b69;
+    border-radius: 100px;
+    padding: 0.75em;
+
+}
+
+
+.layout-mensal-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5.0em;
+}
+
+.layout-mensal {
+    border: 3px solid #f45b69;
+    border-radius: 30px;
+    padding: 1.5em 1.5em 3.0em 1.5em;
+
+}
+
+.layout-mensal hr {
+    border: 0;
+    height: 2px;
+    background: #333; /* Cor da linha */
+    background-image: linear-gradient(to right, #F0EFF4, #22181c, #22181c); /* Gradiente */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.mensal-p {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.layout-button {
+    cursor: pointer;
+    padding: 13px 24px;
+    background-color: #f45b69;
+    color: #22181c;
+    height: 3.8em;
+    line-height: 1;
+    margin-top: auto;
+    font-weight: 900;
+    letter-spacing: 0px;
+    overflow: hidden;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.layout-button:hover {
+    background-color: #931f1d;
+}
+
+.layout-button a {
+    color: #22181c;
+    text-decoration: none;
+}
+
+#plano-basico {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+#plano-premium {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+
+#anual-button {
+    display: flex;
+    justify-content: center;
+    margin: 2.0em 0;
+}
+
+#anual-button button {
+    width: 15.5em;
+    line-height: 1;
+    letter-spacing: .1em;
+    font-size: 1rem;
+    background-color: #22181c;
+    color: #f45b69;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 2px solid #f45b69;
+    border-radius: 100px;
+    padding: 0.75em;
+}
+
+
+.layout-anual-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.layout-anual {
+    border: 3px solid #f45b69;
+    border-radius: 30px;
+    padding: 1.5em 1.5em 3.0em 1.5em;
+}
+
+@keyframes brilho {
+   0% {
+    box-shadow: 0 0 10px 0 #f45b69;
+   }
+
+   50% {
+    box-shadow: 0 0 20px 0 #f45b69;
+   }
+
+   100% {
+    box-shadow: 0 0 10px 0 #f45b69;
+   }
+}
+
+@keyframes pulsar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1);}    
+}
+
+.layout-anual-vip {
+    animation: brilho 2s infinite;
+    border: 3px solid #f45b69;
+    border-radius: 30px;
+    padding: 1.5em 1.5em 3.0em 1.5em;
+}
+
+
+.layout-anual-vip:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+
+.layout-anual hr {
+    border: 0;
+    height: 2px;
+    background: #333; /* Cor da linha */
+    background-image: linear-gradient(to right, #F0EFF4, #22181c, #22181c); /* Gradiente */
+    margin: 0; /* Remove a margem padrão */
+}
+
+
+.anual-p {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2.5em 0;
+}
+
+#plano-vip {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Seção para Crianças */
