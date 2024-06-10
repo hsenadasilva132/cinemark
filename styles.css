@@ -427,7 +427,7 @@ span {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px 15px 15px;
+    padding: 100px 15px 100px 15px;
     
 }
 
@@ -870,6 +870,20 @@ a {
     }
 }
 
+@keyframes brilho3 {
+    0% {
+        box-shadow: 0px 0 100px 20px #d62839;
+    }
+
+    50% {
+        box-shadow: 0 0 100px 20px #ba324f;
+    }
+
+    100% {
+        box-shadow: 0 0 100px 20px #d62839;
+    }
+}
+
 
 .criancas-container {
     margin: 0;
@@ -906,14 +920,49 @@ a {
 }
 
 #combo1 {
-    animation: brilho2 5s infinite;
     position: relative;
     filter: brightness(60%);
     border-radius: 10px;
 }
 
+
+.images-personagens-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25% 0 0 0;
+}
+
+
+#lojaCinemark {
+    position: relative;
+    filter: brightness(80%);
+    border-radius: 10px;
+}
+
+.container-button-saiba-mais {
+    padding-top: 15%;
+    text-align: center;
+}
+
 .button-saiba-mais {
-    position: absolute;
-    top: 300px;
-    left: 10px; 
+    cursor: pointer;
+    height: 5.0em;
+    padding: 5px 60px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #d62839;
+    color: #F0EFF4;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 110%;
+}
+
+.button-saiba-mais:hover {
+    transform: scale(1.15);
+    transition: transform 0.5s;
+
+}
+
 }
