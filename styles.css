@@ -1001,6 +1001,10 @@ footer {
     color: #F0EFF4;
 }
 
+.footer-list-container a:hover {
+    color: #f45b69;
+}
+
 .footer-list-container li {
     color: #F0EFF4;
     list-style: none;
